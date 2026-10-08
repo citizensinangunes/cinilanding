@@ -10,7 +10,7 @@ Run from the repository root:
 python3 -m http.server 3000 --bind 0.0.0.0
 ```
 
-The original `Touros Studio Logo.png` is centered on the page and scales proportionally for desktop and mobile screens.
+The burgundy version `touros-burgundy.png` is centered on the page and scales proportionally for desktop and mobile screens. The original blue logo is retained as `Touros Studio Logo.png`.
 
 ## Hosting
 
