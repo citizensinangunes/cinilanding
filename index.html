@@ -14,21 +14,18 @@
     .top { align-self: start; display: flex; justify-content: space-between; gap: 20px; font-size: 10px; text-transform: uppercase; letter-spacing: .18em; opacity: .8; }
     .brand { grid-row: 2; width: min(100%, 1000px); margin: 0 auto; }
     .brand img { display: block; width: 100%; height: auto; max-height: 60svh; object-fit: contain; }
-    .wordmark { margin: 0; font-size: clamp(72px, 17vw, 230px); font-weight: 900; letter-spacing: -.075em; line-height: .9; }
-    .studio { display: block; font-size: clamp(17px, 3.5vw, 45px); font-weight: 400; letter-spacing: .65em; margin: 20px 0 0 38%; }
     .bottom { grid-row: 3; display: flex; flex-direction: column; justify-content: space-between; padding-top: 38px; gap: 46px; }
     h1 { font-size: 13px; text-transform: uppercase; letter-spacing: .28em; font-weight: 500; margin: 0 0 14px; }
     p { font-size: 14px; line-height: 1.6; opacity: .7; margin: 0; }
     footer { font-size: 10px; opacity: .55; letter-spacing: .06em; }
-    @media (max-width: 600px) { main { padding: 24px 6vw; } .top { font-size: 8px; letter-spacing: .1em; } .studio { margin-top: 14px; } .bottom { padding-top: 32px; } p { font-size: 12px; } }
+    @media (max-width: 600px) { main { padding: 24px 6vw; } .top { font-size: 8px; letter-spacing: .1em; } .bottom { padding-top: 32px; } p { font-size: 12px; } }
   </style>
 </head>
 <body>
   <main>
     <div class="top"><span>Independent Turkish game studio</span><span>New worlds ahead</span></div>
     <div class="brand" aria-label="Touros Studio">
-      <!-- Replace the fallback with the supplied logo once its original image file is available. -->
-      <div class="wordmark" aria-hidden="true">touros<span class="studio">studio</span></div>
+      <img src="Touros%20Studio%20Logo.png" alt="Touros Studio" width="1672" height="941" fetchpriority="high">
     </div>
     <div class="bottom">
       <section><h1>Coming soon</h1><p>Crafted in Türkiye. Made for players everywhere.</p></section>

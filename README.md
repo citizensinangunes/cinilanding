@@ -10,7 +10,7 @@ Run from the repository root:
 python3 -m http.server 3000 --bind 0.0.0.0
 ```
 
-The centered wordmark is currently a text fallback. Once the original logo image is available, save it as `assets/touros-studio.png` and replace the `.wordmark` element with `<img src="assets/touros-studio.png" alt="Touros Studio">`.
+The original `Touros Studio Logo.png` is centered on the page and scales proportionally for desktop and mobile screens.
 
 ## Hosting
 
