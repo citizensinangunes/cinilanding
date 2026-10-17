@@ -19,19 +19,38 @@
     p { font-size: 14px; line-height: 1.6; opacity: .7; margin: 0; }
     footer { font-size: 10px; opacity: .55; letter-spacing: .06em; }
     @media (max-width: 600px) { main { padding: 24px 6vw; } .top { font-size: 8px; letter-spacing: .1em; } .bottom { padding-top: 32px; } p { font-size: 12px; } }
+    .games { max-width: 1050px; margin: auto; padding: 60px 28px 90px; }
+    .games h2 { font-size: 12px; letter-spacing: .2em; text-transform: uppercase; font-weight: 400; margin: 0 0 26px; }
+    .game-card { display: flex; gap: 32px; align-items: center; border: 1px solid #ffffff35; border-radius: 20px; padding: 28px; color: inherit; text-decoration: none; background: #ffffff05; transition: background .2s; }
+    .game-card:hover { background: #ffffff10; }
+    .game-card img { width: 150px; height: 150px; border-radius: 28px; }
+    .game-card h3 { font-size: 32px; letter-spacing: -.04em; margin: 0 0 10px; }
+    .game-card p { max-width: 460px; }
+    .game-card .release { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .15em; margin-bottom: 12px; opacity: .65; }
+    .game-card .explore { display: inline-block; margin-top: 18px; font-size: 13px; }
+    .game-card:focus-visible { outline: 2px solid white; outline-offset: 6px; }
+    @media(max-width:600px) { .game-card { flex-direction: column; align-items: flex-start; padding: 24px; gap: 24px; } .game-card img { width: 110px; height: 110px; border-radius: 24px; } }
   </style>
 </head>
 <body>
   <main>
-    <div class="top"><span>Independent Turkish game studio</span><span>New worlds ahead</span></div>
+    <div class="top"><span>Independent Turkish game studio</span><a href="#games" style="color:inherit;text-decoration:none">Games ↗</a></div>
     <div class="brand" aria-label="Touros Studio">
       <img src="touros-burgundy.png" alt="Touros Studio" width="1672" height="941" fetchpriority="high">
     </div>
     <div class="bottom">
       <section><h1>Coming soon</h1><p>Crafted in Türkiye. Made for players everywhere.</p></section>
-      <footer>© <span id="year">2026</span> Touros Studio · <a href="/triplaza/privacy" style="color:inherit">Triplaza Privacy Policy</a></footer>
+
     </div>
   </main>
+  <section class="games" id="games" aria-labelledby="games-title">
+    <h2 id="games-title">Our games</h2>
+    <a class="game-card" href="/triplaza">
+      <img src="/assets/triplaza-icon.webp" alt="Triplaza ceramic tile icon" width="150" height="150" loading="lazy">
+      <div><span class="release">Coming soon on iOS</span><h3>Triplaza</h3><p>A thoughtful tile-match puzzle with Mediterranean charm. Match three, plan ahead, and bring a colorful mosaic to life.</p><span class="explore">Discover the game ↗</span></div>
+    </a>
+  </section>
+  <footer style="text-align:center;padding:0 24px 30px">© <span id="year">2026</span> Touros Studio · <a href="/triplaza/privacy" style="color:inherit">Triplaza Privacy Policy</a></footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
