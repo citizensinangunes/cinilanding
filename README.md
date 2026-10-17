@@ -23,3 +23,11 @@ The policy is served at `/triplaza/privacy` from `triplaza/privacy/index.html`. 
 ## Games
 
 The home page Games section links to `/triplaza`, served from `triplaza/index.html`. Its icon is copied from the game's original `design/art/app-icon.webp` to `assets/triplaza-icon.webp`. When the iOS game launches, replace the release-status label in `triplaza/index.html` with the confirmed App Store link, and update the home card status. No placeholder download link is active.
+
+## App Store support and advertising files
+
+- `/triplaza/terms`: Terms of Use.
+- `/triplaza/support`: public support page, linked to support@usetouros.com.
+- `/app-ads.txt`: plain-text authorized-seller record, served directly from the repository root. Keep this URL public, without authentication.
+
+In App Store Connect, use `https://usetouros.com/triplaza/support` as the Support URL and `https://usetouros.com` as the developer/marketing website so advertising crawlers can discover the root app-ads.txt. Configure these external settings in App Store Connect; adding files here does not change them. The ads authorization file does not itself activate the AdMob SDK.
