@@ -15,6 +15,7 @@
 <div class="eyebrow">Triplaza: Tile Match Puzzle</div>
 <h1>Privacy Policy</h1>
 <p><strong>Effective date: 17 October 2026</strong></p>
+<p>Last updated: 18 October 2026</p>
 <p>This policy explains how Triplaza handles information when you play the game and use its connected features.</p>
 <h2>1. Who is responsible</h2>
 <p>The data controller is <strong>Ahmet Sinan Güneş</strong>, operating under the <strong>Touros Studio</strong> brand. For privacy questions and requests, email <a href="mailto:support@usetouros.com">support@usetouros.com</a>.</p>
@@ -32,28 +33,48 @@
 <p>Where the GDPR applies, our legal bases are performance of a contract for the game features you request; legitimate interests in understanding game performance, maintaining reliable services and preventing abuse, subject to your rights; consent where required for optional processing; and compliance with applicable legal obligations. You may object to processing based on legitimate interests and withdraw consent where processing relies on it.</p>
 <h2>4. Play-data controls</h2>
 <p><strong>“Share play data” is enabled by default in the current implementation.</strong> You can switch it off in the game’s Settings. Switching it off stops further play-data collection and sending, clears queued events on your device and cancels pending transmission. It does not automatically delete events already sent to CloudKit.</p>
-<p>Play events are sent to Apple CloudKit when the required iCloud account is available. A random installation identifier is used rather than an advertising identifier. Play-data sharing is separate from any future advertising-consent choice.</p>
+<p>Play events are sent to Apple CloudKit when the required iCloud account is available. A random installation identifier is used rather than an advertising identifier. Play-data sharing is separate from advertising-consent choices.</p>
 <h2>5. Apple services, visibility and recipients</h2>
 <p>Triplaza uses Apple CloudKit, Game Center, StoreKit and notification services for the relevant features. Apple processes information under its applicable terms and <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>. Apple account credentials are handled by Apple.</p>
 <p>CloudKit stores play events and social records in its public-database infrastructure. Access depends on record permissions: play events are not intended for general player browsing, while player profiles and social records can be readable by other authenticated iCloud users under the configured schema. Your profile, competitive results and relevant match information may be visible to other players. Avoid using sensitive information in your username or profile.</p>
 <p>Information may also be disclosed where necessary to meet a legal obligation, protect users and the service, or handle a legal claim. We do not sell your personal information.</p>
 <h2>6. Advertising and consent</h2>
-<p><strong>The current implementation does not include an active third-party advertising SDK.</strong> Rewarded-ad integration with Google AdMob and Google’s User Messaging Platform (UMP) is planned, but is not active in the implementation covered by this policy.</p>
-<p>Before activating advertising, we will update this policy to describe the actual SDK data practices and provide applicable consent and privacy controls. The planned first integration is non-personalized advertising without an Apple App Tracking Transparency (ATT) permission request. Non-personalized advertising can still involve personal data and consent requirements; the absence of an ATT prompt does not mean no information is processed.</p>
-<h2>7. Retention and deletion</h2>
+<p>The game shows optional rewarded video ads from Google AdMob. Ads appear only when you choose to watch one for a reward.</p>
+<p>Consent is collected with Google’s User Messaging Platform (UMP) where required, including in the EEA and UK. Ads are non-personalised unless you consent to personalised ads.</p>
+<p>We do not request Apple’s App Tracking Transparency (ATT) permission and we do not track players across other companies’ apps or websites.</p>
+<p>Google processes data to serve and measure ads: your IP address and approximate location derived from it, device and advertising identifiers (the advertising identifier is unavailable without ATT permission), ad interaction data and diagnostic data. Read <a href="https://policies.google.com/technologies/partner-sites">Google’s policy on data use by partner apps and sites</a> for more information.</p>
+<p>When a rewarded ad is completed, Google sends our server a signed confirmation. It contains an opaque, hashed player key, not your name or Game Center ID.</p>
+<h2>7. Triplaza game server</h2>
+<p>The Triplaza game server at <strong>api.usetouros.com</strong>, hosted on Cloudflare, verifies game results to prevent cheating. It may store:</p>
+<ul>
+<li>An Apple App Attest key identifier.</li>
+<li>A Game Center team player identifier.</li>
+<li>A ledger of in-game currency and items.</li>
+<li>Verified level results and Patio Blitz scores.</li>
+<li>Duel results and trophies.</li>
+<li>Purchase transaction identifiers and refund notices from Apple.</li>
+<li>Referral records.</li>
+<li>Rewarded-ad confirmations.</li>
+</ul>
+<p>IP addresses are processed transiently by Cloudflare to deliver requests and limit abuse. We do not store them in our database.</p>
+<p>Server records are kept while you play and deleted when you use “Delete my data” / “Delete my profile” in Settings, or within 30 days of an email request to <a href="mailto:support@usetouros.com">support@usetouros.com</a>.</p>
+<p>Anonymous one-way markers may be kept to prevent reward abuse: hashed purchase and invite markers that cannot identify you.</p>
+<h2>8. Notifications</h2>
+<p>The game can schedule optional local reminders when hearts are full, a daily reward is ready, a streak reminder is due or the kiln is ready. These reminders are created on your device and can be turned off in the game’s Settings or in iOS Settings.</p>
+<h2>9. Retention and deletion</h2>
 <p>Local saves remain until removed or reset. Unsent play events are limited to 5,000 queued events and a maximum age of 30 days; confirmed uploads are removed from the pending queue. This local queue limit is <strong>not</strong> a 30-day deletion promise for server records.</p>
-<p>CloudKit records can remain until deleted; the current implementation does not impose a fixed automatic expiry on all uploaded play events. We retain information only as needed for the purposes described above, subject to applicable legal obligations and valid deletion requests.</p>
-<p>Use <strong>Settings → Delete my profile</strong>, where available, to request deletion of your profile and associated social records created by your account. This operation does not delete all play-data events, other players’ independently created records, local game saves or Apple’s own records. For additional deletion requests, contact <a href="mailto:support@usetouros.com">support@usetouros.com</a>. We may need information to locate the relevant records and verify the request. Do not send Apple passwords.</p>
+<p>Play events used for CloudKit analytics are kept for up to 24 months. Other CloudKit records are retained as needed for the purposes described above, subject to applicable legal obligations and valid deletion requests. Game-server records follow the deletion rules in the Triplaza game server section.</p>
+<p>Use <strong>Settings → Delete my data / Delete my profile</strong>, where available, to delete game-server records and request deletion of your profile and associated social records created by your account. This operation does not delete all CloudKit play-data events, other players’ independently created records, local game saves or Apple’s own records. For additional deletion requests, contact <a href="mailto:support@usetouros.com">support@usetouros.com</a>. We may need information to locate the relevant records and verify the request. Do not send Apple passwords.</p>
 <p>Uninstalling the game does not necessarily delete cloud records. Apple manages its own account, purchase and Game Center records.</p>
-<h2>8. Your rights and choices</h2>
+<h2>10. Your rights and choices</h2>
 <p>Depending on applicable law, you may request access, correction, erasure, restriction or portability of your personal data, object to certain processing, or withdraw consent without affecting the lawfulness of prior processing. Contact our privacy email above. You may also complain to your local data protection authority, including the authority in your country of residence, work or the alleged infringement.</p>
 <p>You can manage Game Center and iCloud account settings through Apple and notification permissions through iOS Settings. Some connected features may be unavailable if you disable the services they require.</p>
-<h2>9. Children</h2>
+<h2>11. Children</h2>
 <p>App Store age ratings and local requirements apply to use of the game. If you are a parent or guardian and believe a child has provided personal information inappropriately, contact us so we can investigate and address it. Please do not include sensitive personal information in public profile fields.</p>
-<h2>10. Security and international processing</h2>
+<h2>12. Security and international processing</h2>
 <p>We use the access controls provided by Apple’s services and take reasonable steps to protect information. No system can guarantee absolute security. Apple’s infrastructure may process information outside your country, including outside the EEA or UK. Where applicable, international transfers must be covered by legally recognized safeguards, such as adequacy decisions or appropriate contractual protections. Contact us for information about safeguards relevant to your data.</p>
-<h2>11. Changes</h2>
-<p>We will update this page when our practices change, including before activating a new advertising integration. The effective date appears above. We will provide additional notice or request consent where required.</p>
+<h2>13. Changes</h2>
+<p>We will update this page when our practices change. The effective date and last-updated date appear above. We will provide additional notice or request consent where required.</p>
 <footer><a href="/triplaza">Triplaza</a> · <a href="/triplaza/terms">Terms of Use</a> · <a href="/triplaza/support">Support</a><br>Ahmet Sinan Güneş · Touros Studio · <a href="mailto:support@usetouros.com">support@usetouros.com</a></footer>
 
 </main></body>
