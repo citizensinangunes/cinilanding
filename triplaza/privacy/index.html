@@ -15,7 +15,7 @@
 <div class="eyebrow">Triplaza: Tile Match Puzzle</div>
 <h1>Privacy Policy</h1>
 <p><strong>Effective date: 17 October 2026</strong></p>
-<p>Last updated: 18 October 2026</p>
+<p>Last updated: 16 November 2026</p>
 <p>This policy explains how Triplaza handles information when you play the game and use its connected features.</p>
 <h2>1. Who is responsible</h2>
 <p>The data controller is <strong>Ahmet Sinan Güneş</strong>, operating under the <strong>Touros Studio</strong> brand. For privacy questions and requests, email <a href="mailto:support@usetouros.com">support@usetouros.com</a>.</p>
@@ -25,6 +25,7 @@
 <li><strong>Play data:</strong> a randomly generated installation identifier, event timestamps, app version, device model, operating system version and language; session and screen activity; level attempts, outcomes and gameplay actions; and reward, shop and purchase-result events. These records help us understand difficulty, reliability and the game economy. An installation identifier can link events over time, so we do not describe this data as completely anonymous.</li>
 <li><strong>Player profiles and social features:</strong> your chosen username, avatar, trophies, profile customizations and showcase items; Game Center player identifier where available; profile creation time; friend connections, blocks, reports, invitations, invitation responses and referral progress.</li>
 <li><strong>Multiplayer:</strong> information needed for matchmaking and live matches through Apple Game Center, and information exchanged with other players to run those matches.</li>
+<li><strong>Advertising and ad measurement:</strong> see section 6 for the data our advertising and measurement partners process.</li>
 <li><strong>Purchases, where available:</strong> Apple StoreKit transaction and product identifiers, verification and entitlement information, and delivery status. Apple processes payments; we do not receive your full payment-card details.</li>
 <li><strong>Support:</strong> your email address and any information you choose to include when contacting us. Please do not send passwords or payment-card information.</li>
 </ul>
@@ -33,16 +34,23 @@
 <p>Where the GDPR applies, our legal bases are performance of a contract for the game features you request; legitimate interests in understanding game performance, maintaining reliable services and preventing abuse, subject to your rights; consent where required for optional processing; and compliance with applicable legal obligations. You may object to processing based on legitimate interests and withdraw consent where processing relies on it.</p>
 <h2>4. Play-data controls</h2>
 <p><strong>“Share play data” is enabled by default in the current implementation.</strong> You can switch it off in the game’s Settings. Switching it off stops further play-data collection and sending, clears queued events on your device and cancels pending transmission. It does not automatically delete events already sent to CloudKit.</p>
-<p>Play events are sent to Apple CloudKit when the required iCloud account is available. A random installation identifier is used rather than an advertising identifier. Play-data sharing is separate from advertising-consent choices.</p>
+<p>Play events are sent to Apple CloudKit when the required iCloud account is available. A random installation identifier is used rather than an advertising identifier. Turning play-data sharing off also limits the ad measurement described in section 6; advertising-consent choices are managed separately.</p>
 <h2>5. Apple services, visibility and recipients</h2>
 <p>Triplaza uses Apple CloudKit, Game Center, StoreKit and notification services for the relevant features. Apple processes information under its applicable terms and <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>. Apple account credentials are handled by Apple.</p>
 <p>CloudKit stores play events and social records in its public-database infrastructure. Access depends on record permissions: play events are not intended for general player browsing, while player profiles and social records can be readable by other authenticated iCloud users under the configured schema. Your profile, competitive results and relevant match information may be visible to other players. Avoid using sensitive information in your username or profile.</p>
 <p>Information may also be disclosed where necessary to meet a legal obligation, protect users and the service, or handle a legal claim. We do not sell your personal information.</p>
-<h2>6. Advertising and consent</h2>
+<h2>6. Advertising, ad measurement and consent</h2>
 <p>The game shows optional rewarded video ads from Google AdMob. Ads appear only when you choose to watch one for a reward.</p>
 <p>Consent is collected with Google’s User Messaging Platform (UMP) where required, including in the EEA and UK. Ads are non-personalised unless you consent to personalised ads.</p>
-<p>We do not request Apple’s App Tracking Transparency (ATT) permission and we do not track players across other companies’ apps or websites.</p>
-<p>Google processes data to serve and measure ads: your IP address and approximate location derived from it, device and advertising identifiers (the advertising identifier is unavailable without ATT permission), ad interaction data and diagnostic data. Read <a href="https://policies.google.com/technologies/partner-sites">Google’s policy on data use by partner apps and sites</a> for more information.</p>
+<p><strong>App Tracking Transparency (ATT).</strong> Starting with version 1.2, the game asks for Apple’s ATT permission after the consent step. If you allow it, our advertising and measurement partners may use your device’s advertising identifier (IDFA) to measure and personalise ads across other companies’ apps and websites. If you decline (or on earlier versions, which do not ask), the advertising identifier is not available, ads are requested as non-personalised, and the game works the same. You can change this at any time in iOS Settings → Privacy &amp; Security → Tracking.</p>
+<p>We use the following partners. Each processes data under its own privacy policy:</p>
+<ul>
+<li><strong>Google AdMob</strong> (rewarded ads): IP address and approximate location derived from it, device identifiers, the advertising identifier where ATT allows it, ad interaction and diagnostic data. See <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps and sites</a> and <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
+<li><strong>Google Analytics for Firebase</strong> (measuring our Google Ads campaigns): app installs, app opens and a few in-game events such as level progress and purchases. Ad personalisation signals are off unless you consent and allow tracking. See <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</li>
+<li><strong>Meta (Facebook, Instagram)</strong> (measuring our ads on Meta platforms): app installs, app opens, purchases and a few in-game events, through Meta’s aggregated measurement. Meta does not collect the advertising identifier from our app. See <a href="https://www.facebook.com/privacy/policy/">Meta’s Privacy Policy</a>.</li>
+<li><strong>TikTok</strong> (measuring our TikTok ads): app installs, app opens, purchases and a few in-game events; the advertising identifier only if you allow tracking. See <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok’s Privacy Policy</a>.</li>
+</ul>
+<p>Measurement partners receive data only after the consent step and your ATT choice. Turning “Share play data” off in Settings stops Firebase and TikTok measurement and the in-game events we send to Meta; Meta’s SDK may still record app installs, app opens and purchases while your advertising consent allows it. You can withdraw advertising consent in the game’s Settings → Ad privacy (where shown). We do not send your username, Game Center identity or contact details to these partners.</p>
 <p>When a rewarded ad is completed, Google sends our server a signed confirmation. It contains an opaque, hashed player key, not your name or Game Center ID.</p>
 <h2>7. Triplaza game server</h2>
 <p>The Triplaza game server at <strong>api.usetouros.com</strong>, hosted on Cloudflare, verifies game results to prevent cheating. It may store:</p>
@@ -60,7 +68,7 @@
 <p>Server records are kept while you play and deleted when you use “Delete my data” / “Delete my profile” in Settings, or within 30 days of an email request to <a href="mailto:support@usetouros.com">support@usetouros.com</a>.</p>
 <p>Anonymous one-way markers may be kept to prevent reward abuse: hashed purchase and invite markers that cannot identify you.</p>
 <h2>8. Notifications</h2>
-<p>The game can schedule optional local reminders when hearts are full, a daily reward is ready, a streak reminder is due or the kiln is ready. These reminders are created on your device and can be turned off in the game’s Settings or in iOS Settings.</p>
+<p>The game can schedule optional local reminders when hearts are full, a daily reward is ready or a streak reminder is due. These reminders are created on your device and can be turned off in the game’s Settings or in iOS Settings.</p>
 <h2>9. Retention and deletion</h2>
 <p>Local saves remain until removed or reset. Unsent play events are limited to 5,000 queued events and a maximum age of 30 days; confirmed uploads are removed from the pending queue. This local queue limit is <strong>not</strong> a 30-day deletion promise for server records.</p>
 <p>Play events used for CloudKit analytics are kept for up to 24 months. Other CloudKit records are retained as needed for the purposes described above, subject to applicable legal obligations and valid deletion requests. Game-server records follow the deletion rules in the Triplaza game server section.</p>
